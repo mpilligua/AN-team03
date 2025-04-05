@@ -1,4 +1,4 @@
-# 🚗 Exercise 1 – Sensor Data Acquisition in CARLA
+# 📷🚗📡 Exercise 1 – Sensor Data Acquisition in CARLA
 The goal of this exercise is to implement collect real-time sensor data with our own CARLA client. This setup simulates the data collection scenario that will be followed in posterior exercises to train autonomous driving models.
 
 We focus on collecting data from two sensors:
