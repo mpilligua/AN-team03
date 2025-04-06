@@ -63,7 +63,7 @@ Additionally it supports the following control modes:
 |-------------|---------------------------------------------|-----|
 | Manual      | Controlled with keyboard                    | M   |
 | Autopilot   | Driven by CARLA’s traffic manager           | N   |
-| AI  | Uses our own AI agent control developed in exercise 4 | B   |
+<!-- | AI  | Uses our own AI agent control developed in exercise 4 | B   | -->
 
 </div>
 
