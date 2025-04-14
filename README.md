@@ -78,3 +78,22 @@ Additionally it supports the following control modes:
 </div>
 
 # 🚗⇔🌍 Exercise 3 – Scenario Generation with Scenic
+The goal of this exercise is to generate targeted scenarios using the Scenic language in CARLA to expose failure cases for the CIL++ autonomous driving model. These scenarios simulate challenging edge-case situations that make the model fail. The scenarios with the correct maneuver could then be used to finetune a driving model and help it learn how to deal with these scenarios making the model more rebust.
+
+📄 Scenic Scenario Descriptions
+
+<div align="center">
+
+| File                    | Description                                               | Video  |
+|-------------------------|-----------------------------------------------------------|--------|
+| `carlaCola.scenic`  | Lead car is an uncommon vehicle which drives slower in fron of ego car ||
+| `last_min_trash_avoid.scenic`| Lead car performs last-moment lane change to avoid trash ||
+| `traffic_lights.scenic`| Ego vehicle approaches an intersection ||
+| `curva_pedestrian.scenic`| Ego vehicle enters a curve while a pedestrian suddenly crosses ||
+| `running_side.scenic`| Pedestrian runs in fornt of the ego vehicle ||
+
+</div>
+
+
+
+
