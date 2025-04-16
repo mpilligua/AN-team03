@@ -86,11 +86,12 @@ The goal of this exercise is to generate targeted scenarios using the Scenic lan
 
 | File                    | Description                                               | Video  |
 |-------------------------|-----------------------------------------------------------|--------|
-| `carlaCola.scenic`  | Lead car is an uncommon vehicle which drives slower in fron of ego car ||
-| `last_min_trash_avoid.scenic`| Lead car performs last-moment lane change to avoid trash ||
-| `traffic_lights.scenic`| Ego vehicle approaches an intersection ||
-| `curva_pedestrian.scenic`| Ego vehicle enters a curve while a pedestrian suddenly crosses ||
-| `running_side.scenic`| Pedestrian runs in fornt of the ego vehicle ||
+| `carlaCola.scenic` | Lead car is an uncommon vehicle which drives slower in front of ego car. Ego car does not correctly respect distance and hits the car | <img src="https://github.com/user-attachments/assets/dd5ec10e-42f5-47eb-8e44-1a686e8efb0a" width="300"/> |
+| `last_min_trash_avoid.scenic` | Lead car performs last-moment lane change to avoid trash. Ego car does not manage to evade the obstacle and crashes. | <img src="https://github.com/user-attachments/assets/f80fcecc-1f78-4e1a-b55e-a1a67ae6896f" width="300"/> |
+| `traffic_lights.scenic` | Ego vehicle approaches an intersection. Ego car does not recognize traffic lights correctly and it goes through despite light being red. | <img src="https://github.com/user-attachments/assets/26525daf-4455-423f-9825-8451696a53cb" width="300"/> |
+| `curva_pedestrian.scenic` | Ego vehicle enters a curve while a pedestrian suddenly crosses. Ego car does not stop and hits the pedestrian. | <img src="https://github.com/user-attachments/assets/7f5f5931-1ff0-43f0-affc-9285dd1cf429" width="300"/> |
+| `running_side.scenic` | Pedestrian runs in front of the ego vehicle. Ego car does not stop and hits the pedestrian. | <img src="https://github.com/user-attachments/assets/48bc5469-8ce8-4998-8b12-60bee70ba080" width="300"/> |
+
 
 </div>
 
