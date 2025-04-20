@@ -130,5 +130,19 @@ https://github.com/user-attachments/assets/420c364b-38fc-42ce-abfa-0e2cb0da6ed5
 https://github.com/user-attachments/assets/1728fe35-72c4-4a51-801c-6d53118967eb
 
 
+### Traffic ligths and correct turn metric: 
+To have a quantitative way of comparing the models we have generated a script that automatically spawns the car in front of 2 different traffic lights with different indications ("right", "left", "followlane", "straight"), each scenario is repeated three times with each of the possible indications (there are no 4 way intersections, therefore there are always 2 correct possible indications plus lanefollow).
+In the following [link](https://drive.google.com/file/d/1VIQYhUK-C4D0aVd1W4DrkxAiOVejYrVg/view?usp=drive_link),  you can watch the video of the scenarios and a comparison between the models. 
+
+The final metrics are: 
+
+|Model        | # Correct traffic lights                                 | # Correct turns |
+|-------------|---------------------------------------------|-----|
+| 1 camera (85 FOV)      | 0                   | 7   |
+| 2 cameras (85 FOV + closeup)      | 1                   | 8   |
+| 1 camera + loss + aug      | 6                   | 7   |
+
+From this table, we can see that adding the augmentation and the weighted loss really improves with correctly stopping at traffic lights. 
+
 
 ---
