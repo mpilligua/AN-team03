@@ -92,6 +92,43 @@ The goal of this exercise is to generate targeted scenarios using the Scenic lan
 | `traffic_lights.scenic` | Ego vehicle approaches an intersection with a traffic light. <br><br> Ego car does not recognize traffic lights correctly and it goes through despite light being red. | <img src="https://github.com/user-attachments/assets/8fded9ca-bff7-483a-a824-5fe7fc54d9d6" width="300"/> |
 | `curva_pedestrian.scenic` | Ego vehicle most of the times enters a curve while a pedestrian suddenly crosses. <br><br> Ego car does not stop and hits the pedestrian. | <img src="https://github.com/user-attachments/assets/1ff24775-c923-46d0-8cff-db6b3a5b83c2" width="300"/> |
 | `running_side.scenic` | Pedestrian runs in front of the ego vehicle. <br><br> Ego car stops a first time, but then it no longer sees the pedestrian, does not stop and hits it. | <img src="https://github.com/user-attachments/assets/904e1280-14e9-4681-9366-8b4a9bc22886" width="300"/> |
+
+
 | `obstacle_rightside_road.scenic` | There is an obstacle in the rightside of the road. <br><br> Ego car does not stop, neither evade it and crashes into the object. | <img src="https://github.com/user-attachments/assets/30df522c-aa34-4327-8f38-675e427a3ac6" width="300"/> |
 
 </div>
+
+
+# 🤖🏎️ Exercise 4 – Training a CIL++ Model
+
+In this exercise, we have trained the **CIL++v2** using the data we've been collecting. The goal is to use the autopilot to generate a dataset, format it, and train a model that can drive in both seen and unseen conditions.
+
+---
+
+## 📥 Data Collection
+
+We first need to gather data that the model can learn from. We collected two types of data:
+
+### 🚗 1. Random driving with traffic 
+- We use the **autopilot** mode in **Town01** to record driving data under 4 different weather conditions: `ClearNoon`, `ClearSunset`, `HardRainNoon`, and `WetNoon`. We recorded around 7 hours of data with traffic (100 cars and 150 pedestrians).
+
+### 🚗 2. Random driving without traffic 
+- Similarly to before, we record 2 hours of alone driving through **Town01** in order to achieve key actions like stoping in a traffic light without any car stoping in front of them and following the road wihout any guidance from other cars.
+
+## 🎯 Model Evaluation
+We have added in the repo the files needed to visualize our model: 
+- connect2carla_ros_2, which sets the carla world, ego, and runs the model.
+- ros_visualize_drive, which receives the data and shows it on the screen.
+
+### 🌍 Town02 (unseen environment)
+In the following videos you can see the model running in town02, this evaluates **generalization**:
+*The videos are speed up to x1.5
+
+https://github.com/user-attachments/assets/420c364b-38fc-42ce-abfa-0e2cb0da6ed5  
+
+
+https://github.com/user-attachments/assets/1728fe35-72c4-4a51-801c-6d53118967eb
+
+
+
+---
