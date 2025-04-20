@@ -82,19 +82,16 @@ The goal of this exercise is to generate targeted scenarios using the Scenic lan
 
 📄 Scenic Scenario Descriptions
 
+
 <div align="center">
 
 | File                    | Description                                               | Video  |
 |-------------------------|-----------------------------------------------------------|--------|
-| `carlaCola.scenic` | Lead car is an uncommon vehicle which drives slower in front of ego car. Ego car does not correctly respect distance and hits the car | <img src="https://github.com/user-attachments/assets/dd5ec10e-42f5-47eb-8e44-1a686e8efb0a" width="300"/> |
-| `last_min_trash_avoid.scenic` | Lead car performs last-moment lane change to avoid trash. Ego car does not manage to evade the obstacle and crashes. | <img src="https://github.com/user-attachments/assets/f80fcecc-1f78-4e1a-b55e-a1a67ae6896f" width="300"/> |
-| `traffic_lights.scenic` | Ego vehicle approaches an intersection. Ego car does not recognize traffic lights correctly and it goes through despite light being red. | <img src="https://github.com/user-attachments/assets/26525daf-4455-423f-9825-8451696a53cb" width="300"/> |
-| `curva_pedestrian.scenic` | Ego vehicle enters a curve while a pedestrian suddenly crosses. Ego car does not stop and hits the pedestrian. | <img src="https://github.com/user-attachments/assets/7f5f5931-1ff0-43f0-affc-9285dd1cf429" width="300"/> |
-| `running_side.scenic` | Pedestrian runs in front of the ego vehicle. Ego car does not stop and hits the pedestrian. | <img src="https://github.com/user-attachments/assets/48bc5469-8ce8-4998-8b12-60bee70ba080" width="300"/> |
-
+| `carlaCola.scenic` | Lead car is an uncommon vehicle which drives slower in front of ego car. Ego car does not correctly respect distance and hits the car. | <img src="https://github.com/user-attachments/assets/99279ac1-604c-458a-b031-9fa4280b1e7d" width="300"/> |
+| `last_min_trash_avoid.scenic` | Lead car performs last-moment lane change to avoid trash. Ego car does not manage to evade the obstacle and crashes. | <img src="https://github.com/user-attachments/assets/2551a757-3bad-4fbb-9b74-60191cbfd9b9" width="300"/> |
+| `traffic_lights.scenic` | Ego vehicle approaches an intersection. Ego car does not recognize traffic lights correctly and it goes through despite light being red. | <img src="https://github.com/user-attachments/assets/8fded9ca-bff7-483a-a824-5fe7fc54d9d6" width="300"/> |
+| `curva_pedestrian.scenic` | Ego vehicle enters a curve while a pedestrian suddenly crosses. Ego car does not stop and hits the pedestrian. | <img src="https://github.com/user-attachments/assets/1ff24775-c923-46d0-8cff-db6b3a5b83c2" width="300"/> |
+| `running_side.scenic` | Pedestrian runs in front of the ego vehicle. Ego car stops a first time, but then it no longer sees the pedestrian, does not stop and hits it. | <img src="https://github.com/user-attachments/assets/904e1280-14e9-4681-9366-8b4a9bc22886" width="300"/> |
+| `obstacle_rightside_road.scenic` | There is an obstacle in the rightside of the road. Ego car does not stop, neither evade it and crashes onto the object. | <img src="https://github.com/user-attachments/assets/30df522c-aa34-4327-8f38-675e427a3ac6" width="300"/> |
 
 </div>
-
-
-
-
